@@ -37,8 +37,8 @@ body {
     background-size: cover;
     background-position: center bottom;
     background-color: #E4E5E6;
-    box-shadow:  20px 20px 60px #c1c2c4, 
-                -20px -20px 60px #ffffff;
+    box-shadow:  20px 20px 30px #c1c2c4, 
+                -20px -20px 30px #ffffff;
 }
 
 .audio-buttons {
@@ -51,12 +51,12 @@ body {
     background-image: url(../media/unmute.png);
     background-repeat: no-repeat;
     height: 26px;
-
 }
+
 .pause-btn {
     position: relative;
     bottom: -650px;
-    right: -230px;
+    right: -220px;
     background-image: url(../media/pause.png);
     background-repeat: no-repeat;
     height: 35px;
@@ -64,7 +64,7 @@ body {
 .play-btn {
     position: relative;
     bottom: -600px;
-    right: -300px;
+    right: -280px;
     background-image: url(../media/play.png);
     background-repeat: no-repeat;
     height: 63px;
@@ -72,7 +72,7 @@ body {
 .stop-btn {
     position: relative;
     bottom: -555px;
-    right: -380px;
+    right: -360px;
     background-image: url(../media/stop.png);
     background-repeat: no-repeat;
     height: 35px;
