@@ -22,14 +22,14 @@ body {
 .bg {
     height: 100vh;
     width: 100%;
-    background-image: url(./media/desktop.png);
+    background-image: url(../media/desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .audio-player {
     position: relative;
-    background-image: url(./media/Phone.png);
+    background-image: url(../media/Phone.png);
     height: 800px;
     width: 600px;
     border-radius: 20px;
@@ -48,7 +48,7 @@ body {
     position: relative;
     bottom: -15px;
     right: -550px;
-    background-image: url(./media/unmute.png);
+    background-image: url(../media/unmute.png);
     background-repeat: no-repeat;
     height: 26px;
 
@@ -57,7 +57,7 @@ body {
     position: relative;
     bottom: -650px;
     right: -230px;
-    background-image: url(./media/pause.png);
+    background-image: url(../media/pause.png);
     background-repeat: no-repeat;
     height: 35px;
 }
@@ -65,7 +65,7 @@ body {
     position: relative;
     bottom: -600px;
     right: -300px;
-    background-image: url(./media/play.png);
+    background-image: url(../media/play.png);
     background-repeat: no-repeat;
     height: 63px;
 }
@@ -73,7 +73,7 @@ body {
     position: relative;
     bottom: -555px;
     right: -380px;
-    background-image: url(./media/stop.png);
+    background-image: url(../media/stop.png);
     background-repeat: no-repeat;
     height: 35px;
 }
@@ -81,7 +81,7 @@ body {
     position: relative;
     bottom: -525px;
     right: -520px;
-    background-image: url(./media/download.png);
+    background-image: url(../media/download.png);
     background-repeat: no-repeat;
     height: 24px;
 }
