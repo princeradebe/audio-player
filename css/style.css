@@ -1,0 +1,115 @@
+/* RESET */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.full-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/media/desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.audio-player {
+    position: relative;
+    background-image: url(/media/Phone.png);
+    height: 800px;
+    width: 600px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-color: #E4E5E6;
+    box-shadow:  20px 20px 60px #c1c2c4, 
+                -20px -20px 60px #ffffff;
+}
+
+.audio-buttons {
+    display: block;
+}
+.mute-btn {
+    position: relative;
+    bottom: -15px;
+    right: -550px;
+    background-image: url(/media/unmute.png);
+    background-repeat: no-repeat;
+    height: 26px;
+
+}
+.pause-btn {
+    position: relative;
+    bottom: -650px;
+    right: -230px;
+    background-image: url(/media/pause.png);
+    background-repeat: no-repeat;
+    height: 35px;
+}
+.play-btn {
+    position: relative;
+    bottom: -600px;
+    right: -300px;
+    background-image: url(/media/play.png);
+    background-repeat: no-repeat;
+    height: 63px;
+}
+.stop-btn {
+    position: relative;
+    bottom: -555px;
+    right: -380px;
+    background-image: url(/media/stop.png);
+    background-repeat: no-repeat;
+    height: 35px;
+}
+.download-btn {
+    position: relative;
+    bottom: -525px;
+    right: -520px;
+    background-image: url(/media/download.png);
+    background-repeat: no-repeat;
+    height: 24px;
+}
+.seek-bar {
+    position: relative;
+    bottom: -600px;
+    right: -25px;
+    width: 540px;
+    height: 14px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0px 1px 30px grey;
+}
+.handle {
+    position: relative;
+    bottom: 7px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+.handle-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    background-color: #E63F6A;
+}
