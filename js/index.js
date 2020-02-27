@@ -1,7 +1,7 @@
 $(document).ready(function(){
     let audioTag = $('audio')[0];
-    let muted = "../media/mute.png";
-    let unmute = "../media/unmute.png";
+    let muted = "media/mute.png";
+    let unmute = "media/unmute.png";
     //Play audio when play button is pressed.
     $('.play-btn').click(function() {
         audioTag.play();
