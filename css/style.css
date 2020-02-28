@@ -78,6 +78,7 @@ body {
     background-image: url(../media/download.png);
     background-repeat: no-repeat;
     height: 24px;
+    width: 40px;
 }
 .seek-bar {
     position: relative;
@@ -188,7 +189,7 @@ body {
         background-image: url(../media/download.png);
         background-repeat: no-repeat;
         height: 24px;
-        /* width: 24px; */
+        width: 40px;
     }
     .seek-bar {
         position: relative;
@@ -291,7 +292,7 @@ body {
         background-image: url(../media/download.png);
         background-repeat: no-repeat;
         height: 24px;
-        /* width: 24px; */
+        width: 40px;
     }
     .seek-bar {
         position: relative;
