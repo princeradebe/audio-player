@@ -36,9 +36,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-    background-color: #E4E5E6;
-    box-shadow:  20px 20px 30px #c1c2c4, 
-                -20px -20px 30px #ffffff;
+    /* background: #53CFCD; */
+    box-shadow:  20px 20px 60px #47b0ae, 
+                 -20px -20px 60px #5feeec;
 }
 
 .audio-buttons {
@@ -95,9 +95,19 @@ body {
     border-radius: 50px;
     box-shadow: 0px 1px 30px grey;
 }
+.fill {
+    bottom: -600px;
+    right: -25px;
+    width: 0px;
+    height: 14px;
+    background-color: #25122E;
+    border-radius: 50px;
+ 
+}
 .handle {
+    display: none;
     position: relative;
-    bottom: 7px;
+    bottom: 20px;
     right: 0px;
     display: flex;
     justify-content: center;
@@ -108,10 +118,11 @@ body {
     background-color: #fff;
 }
 .handle-dot {
+    display: none;
     width: 14px;
     height: 14px;
     border-radius: 50px;
-    background-color: #E63F6A;
+    background-color: #53CFCD;
 }
 
 @media screen and (max-width: 600px) {
@@ -196,6 +207,7 @@ body {
         box-shadow: 0px 1px 30px grey;
     }
     .handle {
+        display: none;
         position: relative;
         bottom: 7px;
         right: 0px;
@@ -208,9 +220,10 @@ body {
         background-color: #fff;
     }
     .handle-dot {
+        display: none;
         width: 14px;
         height: 14px;
         border-radius: 50px;
-        background-color: #E63F6A;
+        background-color: #53CFCD;
     }
 }

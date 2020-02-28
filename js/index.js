@@ -13,10 +13,10 @@ $(document).ready(function(){
         if (audioTag.paused) {
             audioTag.play();
             $('.play-btn').animate({opacity: 1});
-            $('.pause-btn').animate({opacity: 0.5});
+            $('.pause-btn, .stop-btn').animate({opacity: 0.5});
         } else {
             audioTag.pause();
-            $('.play-btn').animate({opacity: 0.5});
+            $('.play-btn, .stop-btn').animate({opacity: 0.5});
             $('.pause-btn').animate({opacity: 1});
         }
     });
@@ -35,6 +35,15 @@ $(document).ready(function(){
             audioTag.muted = true;
             $('.mute-btn').css('background-image', 'url('+ muted +')');
         }
+    });
+    
+    audioTag.addEventListener('timeupdate', function() {
+        let currentTime = audioTag.currentTime;
+        let duration = audioTag.duration;
+        let currentTimeMs = audioTag.currentTime * 1000;
+        $('.fill').stop(true, true).animate({'width': (currentTime) / duration * 100 + '%'});
+        // $('.fill').stop(true, true).animate({'width': (currentTime + .25) / duration * 100 + '%'}, 250, 'linear');
+        // $('.handle').stop(true, true).animate({'right':'-' + (currentTime + .25) / duration * 100 + 'px'}, 250, 'linear');
     });
 })
 
