@@ -6,19 +6,16 @@
     padding:0;
     box-sizing: border-box;
 }
-
 body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-
 .full-section {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .bg {
     height: 100vh;
     width: 100%;
@@ -26,7 +23,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .audio-player {
     position: relative;
     background-image: url(../media/Phone.png);
@@ -38,9 +34,8 @@ body {
     background-position: center bottom;
     /* background: #53CFCD; */
     box-shadow:  20px 20px 60px #47b0ae, 
-                 -20px -20px 60px #5feeec;
+                -20px -20px 60px #5feeec;
 }
-
 .audio-buttons {
     display: block;
 }
@@ -52,7 +47,6 @@ body {
     background-repeat: no-repeat;
     height: 26px;
 }
-
 .pause-btn {
     position: relative;
     bottom: -650px;
@@ -79,8 +73,8 @@ body {
 }
 .download-btn {
     position: relative;
-    bottom: -525px;
-    right: -520px;
+    bottom: 155px;
+    right: -25px;
     background-image: url(../media/download.png);
     background-repeat: no-repeat;
     height: 24px;
@@ -102,7 +96,6 @@ body {
     height: 14px;
     background-color: #25122E;
     border-radius: 50px;
- 
 }
 .handle {
     display: none;
@@ -125,6 +118,110 @@ body {
     background-color: #53CFCD;
 }
 
+/* TABLETS AND SMALLSCREENS */
+@media screen and (max-width: 1366px) {
+    .bg {
+        height: 100vh;
+        width: 100%;
+        background-image: url(../media/desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .audio-player {
+        position: relative;
+        background-image: url(../media/Phone.png);
+        height: 485px;
+        width: 390px;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        /* background-color: #E4E5E6; */
+        box-shadow:  5px 5px 20px #47b0ae, 
+                    -5px -5px 20px #5feeec;
+    }
+    .audio-buttons {
+        display: block;
+    }
+    .mute-btn {
+        position: relative;
+        bottom: -10px;
+        right: -335px;
+        background-image: url(../media/unmute.png);
+        background-repeat: no-repeat;
+        height: 26px;
+        width: 28px;
+    }
+    .pause-btn {
+        position: relative;
+        bottom: -383px;
+        right: -120px;
+        background-image: url(../media/pause.png);
+        background-repeat: no-repeat;
+        height: 35px;
+        width: 35px;
+    }
+    .play-btn {
+        position: relative;
+        bottom: -330px;
+        right: -180px;
+        background-image: url(../media/play.png);
+        background-repeat: no-repeat;
+        height: 63px;
+        width: 63px;
+    }
+    .stop-btn {
+        position: relative;
+        bottom: -285px;
+        right: -250px;
+        background-image: url(../media/stop.png);
+        background-repeat: no-repeat;
+        height: 35px;
+        width: 35px;
+    }
+    .download-btn {
+        /* display: none; */
+        position: relative;
+        bottom: 160px;
+        right: -25px;
+        background-image: url(../media/download.png);
+        background-repeat: no-repeat;
+        height: 24px;
+        /* width: 24px; */
+    }
+    .seek-bar {
+        position: relative;
+        bottom: -360px;
+        right: -25px;
+        width: 340px;
+        height: 14px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        box-shadow: 0px 1px 30px grey;
+    }
+    .handle {
+        display: none;
+        position: relative;
+        bottom: 7px;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: #fff;
+    }
+    .handle-dot {
+        display: none;
+        width: 14px;
+        height: 14px;
+        border-radius: 50px;
+        background-color: #53CFCD;
+    }
+}
+
+/* MOBILE */
 @media screen and (max-width: 600px) {
     .bg {
         height: 100vh;
@@ -142,9 +239,9 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center bottom;
-        background-color: #E4E5E6;
-        box-shadow:  5px 5px 20px #c1c2c4, 
-                    -5px -5px 20px #ffffff;
+        /* background-color: #E4E5E6; */
+        box-shadow:  5px 5px 20px #47b0ae, 
+                    -5px -5px 20px #5feeec;
     }
     .audio-buttons {
         display: block;
@@ -152,13 +249,12 @@ body {
     .mute-btn {
         position: relative;
         bottom: -10px;
-        right: -250px;
+        right: -235px;
         background-image: url(../media/unmute.png);
         background-repeat: no-repeat;
         height: 26px;
-        width: 26px;
+        width: 28px;
     }
-    
     .pause-btn {
         position: relative;
         bottom: -283px;
@@ -187,14 +283,14 @@ body {
         width: 35px;
     }
     .download-btn {
-        display: none;
+        /* display: none; */
         position: relative;
-        bottom: -525px;
-        right: -520px;
+        bottom: 160px;
+        right: -25px;
         background-image: url(../media/download.png);
         background-repeat: no-repeat;
         height: 24px;
-        width: 24px;
+        /* width: 24px; */
     }
     .seek-bar {
         position: relative;
