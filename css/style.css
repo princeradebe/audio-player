@@ -123,9 +123,10 @@ body {
     .bg {
         height: 100vh;
         width: 100%;
-        background-image: url(../media/desktop.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: #47b0ae;
+        /* background-image: url(../media/desktop.png); */
+        /* background-repeat: no-repeat; */
+        /* background-size:cover; */
     }
     .audio-player {
         position: relative;
