@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    let audioTag = $('audio')[0];
-    let muted = "media/mute.png";
-    let unmute = "media/unmute.png";
+    const audioTag = $('audio')[0];
+    const muted = "media/mute.png";
+    const unmute = "media/unmute.png";
     //Play audio when play button is pressed.
     $('.play-btn').click(function() {
         audioTag.play();
@@ -38,9 +38,9 @@ $(document).ready(function(){
     });
     
     audioTag.addEventListener('timeupdate', function() {
-        let currentTime = audioTag.currentTime;
-        let duration = audioTag.duration;
-        let currentTimeMs = audioTag.currentTime * 1000;
+        const currentTime = audioTag.currentTime;
+        const duration = audioTag.duration;
+        const currentTimeMs = audioTag.currentTime * 1000;
         $('.fill').stop(true, true).animate({'width': (currentTime) / duration * 100 + '%'});
         // $('.fill').stop(true, true).animate({'width': (currentTime + .25) / duration * 100 + '%'}, 250, 'linear');
         // $('.handle').stop(true, true).animate({'right':'-' + (currentTime + .25) / duration * 100 + 'px'}, 250, 'linear');
