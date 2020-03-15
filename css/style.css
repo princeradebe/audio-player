@@ -24,9 +24,10 @@ body {
 .bg {
     height: 100vh;
     width: 100%;
-    background-image: url(../media/desktop.png);
+    background-image: url(../media/desktop-min.png);
     background-repeat: no-repeat;
     background-size: cover;
+    /* filter: blur(140px); */
 }
 .bg-2 {
     height: 100vh;
@@ -38,16 +39,16 @@ body {
 }
 .audio-player {
     position: relative;
-    background-image: url(../media/Phone.png);
+    background-image: url(../media/Phone-min.png);
     height: 800px;
     width: 600px;
     border-radius: 20px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     /* background: #53CFCD; */
-    box-shadow:  20px 20px 60px #47b0ae, 
-                -20px -20px 60px #5feeec;
+    box-shadow:  20px 20px 60px #c1a437, 
+                -20px -20px 60px #ffde4b;
 }
 .audio-buttons {
     display: block;
@@ -161,16 +162,16 @@ body {
     }
     .audio-player {
         position: relative;
-        background-image: url(../media/Phone.png);
+        background-image: url(../media/Phone-min.png);
         height: 485px;
         width: 390px;
         border-radius: 20px;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center bottom;
+        background-position: center;
         /* background-color: #E4E5E6; */
-        box-shadow:  5px 5px 20px #47b0ae, 
-                    -5px -5px 20px #5feeec;
+        box-shadow:  20px 20px 60px #c1a437, 
+                    -20px -20px 60px #ffde4b;
     }
     .audio-buttons {
         display: block;
@@ -258,22 +259,22 @@ body {
     .bg {
         height: 100vh;
         width: 100%;
-        background-image: url(../media/desktop.png);
+        background-image: url(../media/desktop-min.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
     .audio-player {
         position: relative;
-        background-image: url(../media/Phone.png);
+        background-image: url(../media/Phone-min-min.png);
         height: 385px;
         width: 290px;
         border-radius: 20px;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center bottom;
+        background-position: center;
         /* background-color: #E4E5E6; */
-        box-shadow:  5px 5px 20px #47b0ae, 
-                    -5px -5px 20px #5feeec;
+        box-shadow:  20px 20px 60px #c1a437, 
+                    -20px -20px 60px #ffde4b;
     }
     .audio-buttons {
         display: block;
