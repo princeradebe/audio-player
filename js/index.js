@@ -46,4 +46,3 @@ $(document).ready(function(){
         // $('.handle').stop(true, true).animate({'right':'-' + (currentTime + .25) / duration * 100 + 'px'}, 250, 'linear');
     });
 })
-
