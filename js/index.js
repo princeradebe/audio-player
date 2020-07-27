@@ -5,26 +5,27 @@ $(document).ready(function(){
     //Play audio when play button is pressed.
     $('.play-btn').click(function() {
         audioTag.play();
-        $('.play-btn').animate({opacity: 1});
-        $('.stop-btn, .pause-btn').animate({opacity: 0.5});
+        $('.play-btn').animate({opacity: 0.5});
+        $('.stop-btn, .pause-btn').animate({opacity: 1});
     });
     //Pause audio if it was playing else contunie playing
     $('.pause-btn').click(function() {
         if (audioTag.paused) {
             audioTag.play();
-            $('.play-btn').animate({opacity: 1});
-            $('.pause-btn, .stop-btn').animate({opacity: 0.5});
+            $('.play-btn').animate({opacity: 0.5});
+            $('.pause-btn, .stop-btn').animate({opacity: 1});
         } else {
             audioTag.pause();
-            $('.play-btn, .stop-btn').animate({opacity: 0.5});
-            $('.pause-btn').animate({opacity: 1});
+            $('.pause-btn, .stop-btn').animate({opacity: 0.5});
+            $('.play-btn').animate({opacity: 1});
         }
     });
 
     $('.stop-btn').click(function() {
         audioTag.pause();
         audioTag.currentTime = 0;
-        $('.play-btn, .pause-btn, .stop-btn').animate({opacity: 1});
+        $('.play-btn').animate({opacity: 1});
+        $('.pause-btn, .stop-btn').animate({opacity: 0.5});
     });
     //Toggle mute icon
     $('.mute-btn').click(function() {
